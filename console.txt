@@ -1,0 +1,26 @@
+Populate both Micro-services database (MongoBD) with Groups data with POST Method
+
+localhost:8081/master/v1/addGroup 
+
+CREATE <username> 
+
+localhost:8081/master/v1/addUser 
+
+ADD <username> TO <group-name> 
+
+localhost:8081/master/v1/addUserToGroup/{$group_id}?email='$UserEmail' 
+
+REMOVE <username> FROM <group-name> 
+
+localhost:8081/master/v1/removeUserToGroup/{$group_id}?email='$UserEmail' 
+
+DELETE <username> 
+
+localhost:8081/master/v1/deleteUser/{user_id} 
+
+for more documentation on masterUserService 
+
+ http://localhost:8081/swagger-ui.html 
+
+For CRUD purpose I have run the microservices with MongoDB, Please make sur you have Mongo running before tests 
+
